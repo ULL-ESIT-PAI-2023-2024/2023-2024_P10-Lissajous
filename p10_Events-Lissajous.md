@@ -98,40 +98,8 @@ Utilice
 interactiva para visualizar la figura cambiando interactivamente los parámetros de la curva.
 
 ### La clase *Lissajous*
-En esta práctica se propone desarrollar una clase `Lissajous` 
+En esta práctica se propone desarrollar una aplicación
 que posibilite la visualización en una página web de curvas de Lissajous.
-
-La visualización de la ejecución del programa se realizará a través de una página web alojada
-en la máquina IaaS-ULL de la asignatura y cuya URL tendrá la forma:
-
-`http://10.6.129.123:8080/einstein-albert-lissajous.html` [1]
-
-en la que se incustará un canvas para dibujar las curvas.
-Sustituya en la URL de su pagina *Albert Einstein* por su nombre y apellidos
-y la dirección IP por la correspondiente a su máquina IaaS.
-
-Utilice código HTML y CSS para imitar en la medida de lo posible la apariencia de
-[esta página](https://academo.org/demos/lissajous-curves/) [2]
-que se tomará como referencia.
-La página que Ud. diseñe ha de contener el canvas de dibujo de las curvas (área cuadriculada en
-la web de referencia y una columna con los campos de texto que permitan introducir valores de los parámetros
-(columna derecha en la web [2] de referencia).
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-En esa columna de la derecha se incluirán exclusivamente 
-
-Se propone además que su página muestre
-* Texto explicativo de las curvas de Lissajous
-* Enlaces a páginas de referencia que se hayan utilizado para realizar este trabajo.
-* Cualquier elemento que les parezca oportuno e interesante
-
-Diseñe asimismo otra página HTML simple 
-
-`http://10.6.129.123:8080/index.html` [3]
-
-que sirva de "página índice" para los ejercicios de la sesión de evaluación de la práctica.
-La página [1] será uno de los enlaces de [3] y a su vez [1] tendrá un enlace `Home` que apunte a [3].
-Enlace también en la página índice [3] las páginas que contienen los informes de documentación y de
-cubrimiento de código de su proyecto.
 
 Tenga en cuenta las siguientes especificaciones a la hora de diseñar su programa:
 
@@ -139,14 +107,14 @@ Tenga en cuenta las siguientes especificaciones a la hora de diseñar su program
 
 * La curva comenzará a dibujarse automáticamente una vez cagada la página en el navegador, sin esperar por ninguna interacción por parte del usuario.
 
-* Para la actualización del dibujo en el viewport del navegador se propone utilizar una aproximación similar a
+* Para la actualización del dibujo en el navegador se propone utilizar una aproximación similar a
 la que se ha utilizado en el ejemplo del reloj estudiado en clase.
-Ello pasa por el uso de una función `update()` cuyo código podría ser similar al siguiente:
+Ello pasa por el uso de una función `update()` cuyo código JS podría ser similar al siguiente:
 
 ```js
 function update() {
   time = (Date.now() - startTime) / 1000;
-  ctx.clearRect(...);
+  context.clearRect(...);
   draw();
   requestAnimationFrame(update);
 }
@@ -158,53 +126,54 @@ En ese código la variable `time` almacena el instante de tiempo actual, necesar
 La finalidad del resto de funciones se deduce de su nombre y contexto. 
 Puede asimismo consultarse la documentación sobre las mismas.
 
-El diseño de su página, que ha de imitar el de
-[la de referencia](https://academo.org/demos/lissajous-curves/)
+El diseño de su página, que ha de imitar el de la de referencia,
 brinda una oportunidad para practicar los elementos HTML y CSS que se han estudiado hasta ahora.
 No se pretende que se utilicen elementos no estudiados hasta esta fecha.
-
-## Referencias
-* [Lissajous Curves](https://academo.org/demos/lissajous-curves/) An interactive demonstration of Lissajous curves
-* [ESLint](https://eslint.org/)
-* [JSDoc](https://jsdoc.app/)
-* [The Modern Javascript Tutorial](https://javascript.info)
-* [PAI Code Examples](https://github.com/ULL-ESIT-PAI-2021-2022/PAI-class-code-examples/tree/master/src)
-* [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
-
-
-########################################################
 
 ### Presentación de resultados
 La visualización de la ejecución del programa se realizará a través de una página web alojada
 en la máquina IaaS-ULL de la asignatura y cuya URL tendrá la forma:
 
-[1] `http://10.6.129.123:8080/einstein-albert-poker.html`
+[1] `http://10.6.129.123:8080/einstein-albert-lissajous.html`
 
-en la que se incustará un lienzo (canvas) para dibujar las manos de la partida de poker.
+en la que se incustará un lienzo (canvas) para dibujar las curvas.
 Sustituya *Albert Einstein* por su nombre y apellido en la URL de su página
 y la dirección IP anterior por la correspondiente a su máquina IaaS.
 
-Utilice código HTML y CSS para lograr una página funcional y visualmente correcta.
+Utilice código HTML y CSS para lograr una página funcional y visualmente correcta,
+imitando en lo posible  la apariencia de [2] 
+[esta página](https://academo.org/demos/lissajous-curves/)
+que se tomará como referencia. 
+
+La página que Ud. diseñe ha de contener el canvas de dibujo de las curvas (área cuadriculada en
+la web de referencia y una columna con los campos de texto que permitan introducir valores de los parámetros
+(columna derecha en la web [2] de referencia).
+En esa columna de la derecha puede Ud. utilizar campos de texto para introducir los valores de los parámetros
+de la curva. 
+Si lo desea, investigue asimismo cómo incluir *sliders* (a través de la etiqueta '<input>' de HTML) para
+modificar los valores de los parámetros usando *sliders* controlados con el ratón.
+
+Se propone además que su página muestre
+* Texto explicativo de las curvas de Lissajous
+* Enlaces a páginas de referencia que se hayan utilizado para realizar este trabajo.
+* Cualquier elemento que les parezca oportuno e interesante
+
 
 Diseñe asimismo otra página HTML simple 
 
-[2] `http://10.6.129.123:8080/index.html`
+[3] `http://10.6.129.123:8080/index.html`
 
 que sirva de "página índice" para los ejercicios de la sesión de evaluación de la práctica.
-La página [1] será uno de los enlaces de [2] y a su vez [1] tendrá un enlace "Home" que apunte a [2].
-Enlace también en la página índice [2] la página que contiene la documentación de su proyecto generada con
-Typedoc.
+La página [1] será uno de los enlaces de [3] y a su vez [1] tendrá un enlace "Home" que apunte a [3].
+Enlace también en la página índice [3] la página que contiene la documentación de su proyecto generada con
+Typedoc y también la página 
 
-Incluya una tercera página
-
-[3] `http://10.6.129.123:8080/uml.html`
+[4] `http://10.6.129.123:8080/uml.html`
 
 que muestre el diagrama UML de las clases que intervienen en su aplicación.
 
-Utilice lo que haya aprendido de CSS para dotar de estilo propio a las páginas HTML que
-desarrolle.
-
 ## Referencias
+* [Lissajous Curves](https://academo.org/demos/lissajous-curves/) An interactive demonstration of Lissajous curves
 * [TypeDoc](https://typedoc.org/)
 * [Google TypeScript Style Guide](https://google.github.io/styleguide/tsguide.html)
 * [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
