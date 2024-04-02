@@ -1,5 +1,5 @@
 {
-  "display": "Configuration for JSON visualization in PAI",
+  "display": "Configuration for Lissajous Curves",
   "compilerOptions": {
     "target": "es2022",
     "module": "commonjs",

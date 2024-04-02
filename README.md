@@ -15,5 +15,5 @@ The project directory organization is as follows:
 
 .
 └── src
-    └── evaluation-session
-
+    ├── evaluation-session
+    └── home-work

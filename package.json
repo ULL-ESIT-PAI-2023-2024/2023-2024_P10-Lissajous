@@ -1,7 +1,7 @@
 {
-  "name": "Práctica 9 de PAI",
+  "name": "Práctica 10 de PAI",
   "version": "1.0.0",
-  "description": "JSON visualization",
+  "description": "Lissajous Curves",
   "private": true,
   "main": "index.js",
   "scripts": {
