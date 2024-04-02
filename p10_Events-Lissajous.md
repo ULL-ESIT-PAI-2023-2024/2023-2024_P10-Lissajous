@@ -41,26 +41,26 @@ y/o
 
 ### Indicaciones de caracter general
 
-La aplicación que desarrolle ha de ser orientada a objetos.
+* La aplicación que desarrolle ha de ser orientada a objetos.
 Ponga en práctica en su desarrollo los fundamentos, principios y buenas prácticas de la OOP así como los
 conocimientos que haya adquirido en el uso de patrones de diseño.
 
-Configure adecuadamente ficheros `package.json` y `tsconfig.json` en el directorio raíz de su ejercicio, 
-de modo que ejecutando `npm install` queden instaladas todas las dependencias del proyecto.
+* Configure adecuadamente ficheros `package.json` y `tsconfig.json` en el directorio raíz de su proyecto que
+permitan gestionar las dependencias del mismo.
 
-Previo a la implementación de cada clase, diseñe y desarrolle un conjunto de tests para probar el correcto
+* Previo a la implementación de cada clase, diseñe y desarrolle un conjunto de tests para probar el correcto
 funcionamiento de todos los métodos públicos.
 
-Utilice un fichero distinto para el código de cada una de las clases que intervienen en su programa.
+* Utilice un fichero distinto para el código de cada una de las clases que intervienen en su programa.
 
-Encapsule las clases en módulos que exporten la correspondiete clase hacia otros programas clientes que pudieran utilizarla.
+* Encapsule las clases en módulos que exporten la correspondiete clase hacia otros programas clientes que pudieran utilizarla.
 
-Configure para la práctica una página web que sirva de índice para mostrar la documentación generada por
+* Configure para la práctica una página web que sirva de índice para mostrar la documentación generada por
 Typedoc para esta práctica.
 
-Todo el código estará ubicado en el directorio `src` del proyecto. Use subdirectorios de éste si le resulta conveniente.
+* Todo el código estará ubicado en el directorio `src` del proyecto. Use subdirectorios de éste si le resulta conveniente.
 
-Antes de comenzar a desarrollar su programa dedique el tiempo necesario a diseñar la estructura de clases que
+* Antes de comenzar a desarrollar su programa dedique el tiempo necesario a diseñar la estructura de clases que
 utilizará en su programa, así como las relaciones existentes entre las mismas.
 Desarrolle un diagrama UML para esas clases, que ha de añadir a la página índice de esta práctica.
 Asegúrese de la corrección de su diagrama.
@@ -69,7 +69,7 @@ Una aplicación para la realización de diagramas UML como
 puede resultarle útil para esta finalidad, aunque puede usar cualquier otro programa que conozca, 
 o simplemente papel y bolígrafo.
 
-Realice, como siempre, un diseño incremental del programa comprobando cada una de las funcionalidades que añade, siguiendo un
+* Realice, como siempre, un diseño incremental del programa comprobando cada una de las funcionalidades que añade, siguiendo un
 desarrollo TDD.
 
 ### Las curvas de Lissajous
@@ -116,6 +116,7 @@ que se tomará como referencia.
 La página que Ud. diseñe ha de contener el canvas de dibujo de las curvas (área cuadriculada en
 la web de referencia y una columna con los campos de texto que permitan introducir valores de los parámetros
 (columna derecha en la web [2] de referencia).
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 En esa columna de la derecha se incluirán exclusivamente 
 
 Se propone además que su página muestre
